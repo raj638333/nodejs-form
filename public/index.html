@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="ass/css/bootstrap.css" />
+    <link rel="stylesheet" href="server.js">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script src="server.js"></script>
+    <script src="scrollreveal.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <!-- Navbar -->
+     <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">MEENAKSHISUNDARAM R</a>
+        <button onclick="menubar"
+          class="navbar-toggler navbar"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          data-toggle="#navbarNav"
+        >
+          <span class="navbar-toggler-icon" id="menu-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" id="color">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="color">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services" id="color">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project" id="color">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="color">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center home-content">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <h1 >Hello, It's Me</h1>
+            <h2 class="fw-bold fs-1">MEENAKSHISUNDARAM R</h2>
+            <h3>
+              And I'm a <span class="highlight">Frontend Developer!</span>
+            </h3>
+            <p class="vaya">
+              Welcome to my professional portfolio. I am a skilled web developer
+              with a passion for creating exceptional user experiences.
+            </p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons my-4">
+              <a href="https://x.com/Raj63772372?s=08" class="social-icon"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_raj_200?igsh=MTJtbHJuODV6YmpwMw=="
+                class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="www.linkedin.com/in/sundaram63" class="social-icon"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://github.com/raj638333" class="social-icon"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+
+            <!-- Download CV Button -->
+            <a
+              href="MS-CV.pdf"
+              download="Download CV"
+              class="btn btn-primary btn-shadow"
+              >Download CV</a
+            >
+          </div>
+
+          <!-- Image with Circle Background -->
+          <div class="col-md-6 text-center">
+            <div class="image-container">
+              <div class="image-circle">
+                <img
+                  src="img-01.png"
+                  alt="Profile Picture"
+                  class="profile-img"
+                  id="imghover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image with Circle Background -->
+          <div class="col-md-6 text-center">
+            <div class="about-image-container">
+              <div class="about-image-circle">
+                <img
+                  src="im11.jpg"
+                  alt="Profile Picture"
+                  class="profile-img-a"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- About Me Text Content -->
+          <div class="col-md-6">
+            <h2>About <span class="highlight" id="about">Me</span></h2>
+            <h3>Web Developer Extraordinaire!</h3>
+            <p>
+              I am a dedicated frontend developer with a focus on creating
+              visually appealing and user-friendly websites. My expertise
+              includes HTML, CSS, and JavaScript, and I'm passionate about
+              staying updated on the latest web development trends.
+            </p>
+
+            <!-- Read More Button -->
+            <a href="about.html" class="btn btn-primary btn-shadow"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services Section -->
+    <section class="my-services py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          My <span class="highlight" id="Services">Services</span>
+        </h2>
+        <div class="row">
+          <!-- Service 1: Web Development -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="service-card text-center p-4">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-description">
+                I offer high-quality web development services, creating
+                responsive and interactive websites tailored to clients' needs.
+              </p>
+              <a href="#" class="btn btn-primary btn-shadow">Read More</a>
+            </div>
+          </div>
+
+          <!-- Service 2: Graphic Design -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="service-card text-center p-4">
+              <div class="service-icon">
+                <i class="bi bi-pencil-fill"></i>
+              </div>
+              <h3 class="service-title">Graphic Design</h3>
+              <p class="service-description">
+                With a creative touch, I provide graphic design services to
+                enhance the visual appeal of websites and digital content.
+              </p>
+              <a href="#" class="btn btn-primary btn-shadow">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-5" style="color: #fff; font-size: 2.5rem">
+        Latest <span style="color: #00d1ff" id="project">Project</span>
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 project">
+          <div
+            class="card bg-dark border-3 img-padding text-light"
+            id="img-padding"
+          >
+            <img
+              src="screen1.png"
+              class="card-img-top rounded-3"
+              alt="Project 1"
+            /><div>
+            <h5 class="prodet">Online class & Course, Interview Practice Platform</h5>
+            <p class="prodet1">A responsive web platform for online learning and interview perparation, built using HTML, CSS, Bootstrap, and JavaScript. It includes course listings, video sessions, and interactive interview practice features. Designed for a smooth user experience across all devices.</p>
+            <h6 class="prodet1">Technologies</h6>
+            <div class="prodet1 d-flex">
+              <div class="boxedit">
+                <p class="text-dark">HTML5</p>
+              </div>
+              <div class="boxedit">
+                <p class="text-dark">CSS3</p>
+              </div>
+              <div class="boxedit">
+                <p class="text-dark">Bootstrap</p>
+              </div>
+
+              <div class="boxedit">
+                <p class="text-dark">JavaScript</p>
+              </div>
+
+            </div>
+            <p>
+              <h6 class="prodet1">Key Contributions</h6>
+              <ui>
+                <li class="prodet1">Developed with HTML, CSS, Bootstrap 5, and JavaScript.</li>
+                <li class="prodet1">
+                  Features: Course catalog, video player UI, login/signup, and quiz or Q&A practice.
+                </li>
+                <li class="prodet1">Fully responsive design for desktop tablet, and mobile.</li>
+                <li class="prodet1">Ideal for students, job seekers, and online educators.</li>
+              </ui>
+            </p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark border-3 img-padding" id="img-padding">
+            <img
+              src="screen3.png"
+              class="card-img-top rounded-3"
+              alt="Project 2"
+            />
+
+            <div>
+              <h5 class="prodet">Photography & videography Booking Platform</h5>
+              <p class="prodet1">A creative project focused on capturing moments through Photography and videography, Designed using Figma Includes a mordern photo album layout and stylish frame mockup for showcasing visual stories.</p>
+                            <h6 class="prodet1">Technologies</h6>
+              <div class="prodet1 d-flex">
+                <div class="boxedit">
+                  <p class="text-dark">Figma</p>
+                </div>
+                <div class="boxedit">
+                  <p class="text-dark">Photoshop</p>
+                </div>
+                <div class="boxedit">
+                  <p class="text-dark">UI</p>
+                </div>
+  
+                <div class="boxedit">
+                  <p class="text-dark">Sketch</p>
+                </div>
+  
+              </div>
+              <p>
+                <h6 class="prodet1">Key Contributions</h6>
+                <ui>
+                  <li class="prodet1">Designed using Figma with focus on visual storytelling.</li>
+                  <li class="prodet1">
+                    Features photo album, video thumbnails, and frame mockups.
+                  </li>
+                  <li class="prodet1">Clean, professional layout for showcasing events portraits, or memories.</li>
+                  <li class="prodet1">Responsive-friendly concept, ready for website or print use</li>
+                  <li class="prodet1">Ideal for portfolio, wedding shoots, and promotional displays</li>
+                </ui>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark border-3 img-padding" id="img-padding">
+            <img
+              src="screen2.png"
+              class="card-img-top rounded-3"
+              alt="Project 3"
+            />
+            <div>
+              <h5 class="prodet">Bootstrap Admin Dashboard</h5>
+              <p class="prodet1">A responsive and modern admin dashboard built using Bootstrap 5. It features clean UI components, charts, tables, and a mobile-friendly layout. Perfect for managing analytics, users, and web app data.</p>
+              <h6 class="prodet1">Technologies</h6>
+              <div class="prodet1 d-flex">
+                <div class="boxedit">
+                  <p class="text-dark">HTML</p>
+                </div>
+                <div class="boxedit">
+                  <p class="text-dark">CSS</p>
+                </div>
+                <div class="boxedit">
+                  <p class="text-dark">Bootstrap</p>
+                </div>
+  
+                <div class="boxedit">
+                  <p class="text-dark">JavaScript</p>
+                </div>
+  
+              </div>
+              <p>
+                <h6 class="prodet1">Key Contributions</h6>
+                <ui>
+                  <li class="prodet1">Built with Bootstrap 5(HTML, CSS, JS).</li>
+                  <li class="prodet1">
+                    Includes dashboard widgets, charts (Chart.js), tables, and side.
+                  </li>
+                  <li class="prodet1">Fully responsive and optimized for desktop and mobile.</li>
+                  <li class="prodet1">Can be integrated into real-time web apps or admin panels</li>
+                </ui>
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark border-3 img-padding" id="img-padding">
+            <img
+              src="screen4.png"
+              class="card-img-top rounded-3"
+              alt="Project 4"
+            />
+
+            <div>
+              <h5 class="prodet">Photography & Videography Dashboard</h5>
+              <p class="prodet1">A visually rich dashboard UI designed in Figma for managing Photography, videography project, albums and client details. It features clean layouts, image previews, and easy navigation for Photography, videography and studios. Ideal for showcasing creative and functional UI design skills.</p>
+              <h6 class="prodet1">Technologies</h6>
+              <div class="prodet1 d-flex">
+                <div class="boxedit">
+                  <p class="text-dark">Figma</p>
+                </div>
+                <div class="boxedit">
+                  <p class="text-dark">UI/UX</p>
+                </div>
+                <div class="boxedit">
+                  <p class="text-dark">Photoshop</p>
+                </div>
+  
+                 
+              </div>
+              <p>
+                <h6 class="prodet1">Key Contributions</h6>
+                <ui>
+                  <li class="prodet1">Designed using Figma with a focus on UI/UX for photographers.</li>
+                  <li class="prodet1">
+                    Includes sections for projecr management, album previews, and client details.
+                  </li>
+                  <li class="prodet1">Modern and minimalist layout with a user-frindly interface.</li>
+                </ui>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-5" style="color: #fff; font-size: 2.5rem">
+        Contact <span style="color: #00d1ff" id="contact">Me!</span>
+      </h2>
+      <form id="contactForm">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <input
+              type="hidden"
+              name="access_key"
+              value="c19e3008-38ea-4405-bd47-758ed1486bbd"
+            />
+
+            <label for="name">Full Name :</label>
+            <input
+              type="text"
+              class="form-control bg-dark text-white border-0 p-3"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email">Email Address :</label>
+            <input
+              type="email"
+              class="form-control bg-dark text-white border-0 p-3"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="phone">Phone Number :</label>
+            <input
+              type="text"
+              class="form-control bg-dark text-white border-0 p-3"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="subject">Email Subject :</label>
+            <input
+              type="text"
+              class="form-control bg-dark text-white border-0 p-3"
+              id="subject"
+              name="subject"
+              placeholder="Email Subject"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="message">Your Message :</label>
+            <textarea class="form-control bg-dark text-white border-0 p-3" rows="5" id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button onclick="preventDefault()" type="submit" class="btn btn-primary px-5 py-2" id="contact-form" style="background: linear-gradient(to bottom right, #00d1ff, #00ffa3); border: none; color: #000; ">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons for the arrow -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.server.js"></script>
+
+  </body>
+
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      subject: form.subject.value,
+      message: form.message.value,
+    };
+
+    try {
+      const response = await fetch("http://localhost:3000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+      alert(result.msg);
+      form.reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Failed to send message. Try again later.");
+    }
+  });
+</script>
+
+
+</html>
