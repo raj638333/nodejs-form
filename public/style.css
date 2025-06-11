@@ -300,3 +300,26 @@ body, html {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.box5{
+  height: 70px;
+  width: 70px;
+  background-color: #00c4e0;
+  border-radius: 50%;
+  }
+
+  .box6{
+    display: flex;
+    justify-content: end;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  #uparrow{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 10px;
+    color: #021024;
+  }
