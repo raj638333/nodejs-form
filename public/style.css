@@ -288,6 +288,11 @@ body, html {
     margin-left: 25px;
   }
 
+  .prode{
+    padding-left: 0px;
+    margin: 15px;
+  }
+
   .prodet2{
     font-size: medium;
     color: white;
